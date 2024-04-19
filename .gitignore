@@ -1,0 +1,37 @@
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+
+
+# Virtual Environments #
+env/ 
+venv/ 
+ENV/ 
+VENV/
+
+
+# Environments Variables #
+.env 
+.venv
+env.bak/ 
+venv.bak/ 
+
+
+# PyCharm # 
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+
+# Visual Studio Code # 
+.vscode/* 
+!.vscode/settings.json 
+!.vscode/tasks.json 
+!.vscode/launch.json 
+!.vscode/extensions.json 
+.history

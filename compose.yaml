@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+    volumes:
+      - ./src:/src
+      - ./.env:/.env
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - DB_PASSWORD=${DB_PASSWORD}
+
+
+  db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
