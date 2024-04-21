@@ -1,0 +1,30 @@
+body {
+    background-color: var(--primary);
+    color: white;
+
+    main {
+        display: flex;
+
+        aside {
+            width: 20%;
+
+            display: flex;
+            justify-content: end;
+            padding-right: 4rem;
+
+            div.person_container {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                span {
+                    display: block;
+                }
+            }
+        }
+
+        section {
+            width: 80%;
+        }
+    }
+}

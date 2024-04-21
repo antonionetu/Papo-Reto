@@ -1,3 +1,53 @@
-body {
-    color: green;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, button, input {
+    font-family: 'Rajdhani';
+}
+span, p, li {
+    font-family: 'Roboto';
+}
+
+:root {
+    --primary: #175290;
+    --primary-bg: #E6F7FF;
+    --primary-light: #8EB6CA;
+    --primary-dark: #051236;
+
+    --secondary: #D87550;
+    --secondary-bg: #FFF3EE;
+    --secondary-light: #ECC0B0;
+    --secondary-dark: #DD8E72;
+
+    --tertiary: #471290;
+    --tertiary-bg: #F1E9FF;
+    --tertiary-light: #A997C8;
+    --tertiary-dark: #614DA0;
+
+    --warning: #471290;
+    --warning-bg: #F1E9FF;
+    --warning-light: #A997C8;
+    --warning-dark: #614DA0;
+
+    --error: #471290;
+    --error-bg: #F1E9FF;
+    --error-light: #A997C8;
+    --error-dark: #614DA0;
+
+    --success: #471290;
+    --success-bg: #F1E9FF;
+    --success-light: #A997C8;
+    --success-dark: #614DA0;
+ 
+    --info: #471290;
+    --info-bg: #F1E9FF;
+    --info-light: #A997C8;
+    --info-dark: #614DA0;
+
+
 }
