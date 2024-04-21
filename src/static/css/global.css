@@ -6,7 +6,12 @@
     padding: 0px;
 }
 
-h1, h2, h3, h4, h5, h6, button, input {
+body {
+    background-color: var(--primary-dark);
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6, a, button, input {
     font-family: 'Rajdhani';
 }
 span, p, li {
@@ -20,8 +25,8 @@ span, p, li {
     --primary-dark: #051236;
 
     --secondary: #D87550;
-    --secondary-bg: #FFF3EE;
-    --secondary-light: #ECC0B0;
+    --secondary-bg: #D5FEFE;
+    --secondary-light: #B5FFFF;
     --secondary-dark: #DD8E72;
 
     --tertiary: #471290;
@@ -48,6 +53,55 @@ span, p, li {
     --info-bg: #F1E9FF;
     --info-light: #A997C8;
     --info-dark: #614DA0;
+}
 
+.d-flex {
+    display: flex;
+}
 
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+.items-center {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    height: 44px;
+    text-align: center;
+    padding: 4px 2rem;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14pt;
+    color: black;
+    transition: 0.3s ease-in-out;
+
+    &.primary {
+        background-color: var(--primary-bg);
+
+        &:hover{
+            background-color: var(--primary-light);
+        }
+    }
+
+    &.secondary {
+        background-color: var(--secondary-bg);
+
+        &:hover{
+            background-color: var(--secondary-light);
+        }
+    }
+
+    &.tertiary { 
+        background-color: var(--tertiary-bg);
+
+        &:hover{
+            background-color: var(--tertiary-light);
+        }
+    }
 }
