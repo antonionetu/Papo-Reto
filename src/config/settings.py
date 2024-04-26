@@ -25,7 +25,7 @@ INSTALLED_APPS = [
 
     # Custom
     'apps.posts',
-    'apps.viewers'
+    'apps.entities'
 ]
 
 MIDDLEWARE = [

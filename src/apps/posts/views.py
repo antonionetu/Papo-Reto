@@ -12,7 +12,7 @@ def post_list(request):
     # ...
 
     post_data = get_list_or_404(
-        Post.objects.order_by('-viewers_count', '-likes', '-created_at'), 
+        Post.objects.order_by('-views', '-likes', '-created_at'), 
         Q(title__contains=query_search) if query_search else Q(),
         # ...
     )
