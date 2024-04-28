@@ -58,7 +58,7 @@ header > nav {
                     border: none;
                     background-color: var(--secondary-bg);
                     margin-top: .1em;
-                      
+                    
                     &:hover {
                         cursor: pointer;
                     }

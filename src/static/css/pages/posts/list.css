@@ -1,0 +1,27 @@
+main {
+    section {
+        ol {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+
+            li {
+                width: 50%;
+
+                a {
+                    color: var(--secondary-bg);
+                    transition: 0.3s;
+
+                    h2 {
+                        font-size: 24pt;
+                    }
+
+                    &:hover {
+                        color: var(--secondary-light);
+                    }
+                }
+            }
+        }
+    }
+}
