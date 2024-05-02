@@ -58,14 +58,21 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
+CONNECTION_STRING = os.getenv('DATABASE_CREDENTIALS')
+CONNECTION_DICT = {
+    key: value 
+    for pair in connection_string.split(" ") 
+        for key, value in [pair.split("=")]
+}
+
 DATABASES = {
     "default": {
-        "ENGINE": os.getenv("DB_ENGINE"),
-        "NAME": os.getenv("DB_DATABASE"),
-        "USER": os.getenv("DB_USER"),
-        "PASSWORD": os.getenv("DB_PASSWORD"),
-        "HOST": os.getenv("DB_HOST"),
-        "PORT": os.getenv("DB_PORT"),
+        "ENGINE": 'django.db.backends.postgresql',
+        "NAME": CONNECTION_DICT['dbname'],
+        "USER": CONNECTION_DICT['user'],
+        "PASSWORD": CONNECTION_DICT['password'],
+        "HOST": CONNECTION_DICT['host'],
+        "PORT": CONNECTION_DICT['5432'],
     }
 }
 
